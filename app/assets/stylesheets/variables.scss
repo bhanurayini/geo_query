@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Open+Sans+Condensed:300|Indie+Flower|Poiret+One|Dosis|Alegreya+Sans);
+
+/** font usage **/
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Raleway', sans-serif;
+// font-family: 'Open Sans Condensed', sans-serif;
+// font-family: 'Indie Flower', cursive;
+// font-family: 'Poiret One', cursive;
+// font-family: 'Dosis', sans-serif;
+// font-family: 'Alegreya Sans', sans-serif;
+
+@mixin font-specs($family, $fam-style, $size){
+  font-family: $family, $fam-style;
+  font-size: $size;
+}
+
+/** colors **/
+$main-color: rgba(255,255,224,0.8);
+$bg-color: rgba(0,0,0,0.4);
+
+@mixin colors($font-color, $bkg-color: $bg-color){
+  color: $font-color;
+  background-color: $bkg-color;
+}
+
+/** borders **/
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin button(){
+
+}

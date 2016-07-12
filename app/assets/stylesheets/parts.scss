@@ -1,0 +1,6 @@
+header{
+  h1{
+    @include font-specs('Dosis', sans-serif, 1.3em);
+    @include colors($main-color);
+  }
+}
