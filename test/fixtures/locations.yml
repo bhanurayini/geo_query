@@ -1,0 +1,57 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  physical_address: MyString
+  mailing_address: MyString
+  city: MyString
+  state: MyString
+  zip: 1
+  major_intersections: MyString
+  address_status: MyString
+  website: MyString
+  contact_name: 
+  contact_email: 
+  phone: 
+  service_hours: 
+  service_hours_notes: MyText
+  hours: 
+  other_eligibility: MyText
+  case_management: MyString
+  case_management_services: MyText
+  donation_flag: false
+  volunteer_flag: false
+  volunteer_activity: MyText
+  is_active: false
+  is_deleted: MyString
+  is_approved: false
+  start_age: 1
+  end_age: 1
+
+two:
+  name: MyString
+  physical_address: MyString
+  mailing_address: MyString
+  city: MyString
+  state: MyString
+  zip: 1
+  major_intersections: MyString
+  address_status: MyString
+  website: MyString
+  contact_name: 
+  contact_email: 
+  phone: 
+  service_hours: 
+  service_hours_notes: MyText
+  hours: 
+  other_eligibility: MyText
+  case_management: MyString
+  case_management_services: MyText
+  donation_flag: false
+  volunteer_flag: false
+  volunteer_activity: MyText
+  is_active: false
+  is_deleted: MyString
+  is_approved: false
+  start_age: 1
+  end_age: 1

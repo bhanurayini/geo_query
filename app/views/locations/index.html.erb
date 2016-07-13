@@ -1,0 +1,77 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Locations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Physical address</th>
+      <th>Mailing address</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Zip</th>
+      <th>Major intersections</th>
+      <th>Address status</th>
+      <th>Website</th>
+      <th>Contact name</th>
+      <th>Contact email</th>
+      <th>Phone</th>
+      <th>Service hours</th>
+      <th>Service hours notes</th>
+      <th>Hours</th>
+      <th>Other eligibility</th>
+      <th>Case management</th>
+      <th>Case management services</th>
+      <th>Donation flag</th>
+      <th>Volunteer flag</th>
+      <th>Volunteer activity</th>
+      <th>Is active</th>
+      <th>Is deleted</th>
+      <th>Is approved</th>
+      <th>Start age</th>
+      <th>End age</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @locations.each do |location| %>
+      <tr>
+        <td><%= location.name %></td>
+        <td><%= location.physical_address %></td>
+        <td><%= location.mailing_address %></td>
+        <td><%= location.city %></td>
+        <td><%= location.state %></td>
+        <td><%= location.zip %></td>
+        <td><%= location.major_intersections %></td>
+        <td><%= location.address_status %></td>
+        <td><%= location.website %></td>
+        <td><%= location.contact_name %></td>
+        <td><%= location.contact_email %></td>
+        <td><%= location.phone %></td>
+        <td><%= location.service_hours %></td>
+        <td><%= location.service_hours_notes %></td>
+        <td><%= location.hours %></td>
+        <td><%= location.other_eligibility %></td>
+        <td><%= location.case_management %></td>
+        <td><%= location.case_management_services %></td>
+        <td><%= location.donation_flag %></td>
+        <td><%= location.volunteer_flag %></td>
+        <td><%= location.volunteer_activity %></td>
+        <td><%= location.is_active %></td>
+        <td><%= location.is_deleted %></td>
+        <td><%= location.is_approved %></td>
+        <td><%= location.start_age %></td>
+        <td><%= location.end_age %></td>
+        <td><%= link_to 'Show', location %></td>
+        <td><%= link_to 'Edit', edit_location_path(location) %></td>
+        <td><%= link_to 'Destroy', location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Location', new_location_path %>

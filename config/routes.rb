@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  resources :programs
+  resources :locations
+  resources :organizations
   root                                      'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

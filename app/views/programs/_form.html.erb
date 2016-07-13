@@ -1,0 +1,85 @@
+<%= form_for(@program) do |f| %>
+  <% if @program.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@program.errors.count, "error") %> prohibited this program from being saved:</h2>
+
+      <ul>
+      <% @program.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :website %><br>
+    <%= f.text_field :website %>
+  </div>
+  <div class="field">
+    <%= f.label :is_active %><br>
+    <%= f.text_field :is_active %>
+  </div>
+  <div class="field">
+    <%= f.label :is_deleted %><br>
+    <%= f.text_field :is_deleted %>
+  </div>
+  <div class="field">
+    <%= f.label :contact_name %><br>
+    <%= f.text_field :contact_name %>
+  </div>
+  <div class="field">
+    <%= f.label :contact_email %><br>
+    <%= f.text_field :contact_email %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br>
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :is_approved %><br>
+    <%= f.check_box :is_approved %>
+  </div>
+  <div class="field">
+    <%= f.label :meeting_flag %><br>
+    <%= f.check_box :meeting_flag %>
+  </div>
+  <div class="field">
+    <%= f.label :meeting_time %><br>
+    <%= f.text_area :meeting_time %>
+  </div>
+  <div class="field">
+    <%= f.label :wait_list %><br>
+    <%= f.text_field :wait_list %>
+  </div>
+  <div class="field">
+    <%= f.label :safe_haven %><br>
+    <%= f.text_field :safe_haven %>
+  </div>
+  <div class="field">
+    <%= f.label :start_age %><br>
+    <%= f.number_field :start_age %>
+  </div>
+  <div class="field">
+    <%= f.label :end_age %><br>
+    <%= f.number_field :end_age %>
+  </div>
+  <div class="field">
+    <%= f.label :eligibility %><br>
+    <%= f.text_area :eligibility %>
+  </div>
+  <div class="field">
+    <%= f.label :restrictions %><br>
+    <%= f.text_area :restrictions %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

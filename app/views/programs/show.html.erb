@@ -1,0 +1,89 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @program.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @program.description %>
+</p>
+
+<p>
+  <strong>Website:</strong>
+  <%= @program.website %>
+</p>
+
+<p>
+  <strong>Is active:</strong>
+  <%= @program.is_active %>
+</p>
+
+<p>
+  <strong>Is deleted:</strong>
+  <%= @program.is_deleted %>
+</p>
+
+<p>
+  <strong>Contact name:</strong>
+  <%= @program.contact_name %>
+</p>
+
+<p>
+  <strong>Contact email:</strong>
+  <%= @program.contact_email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @program.phone %>
+</p>
+
+<p>
+  <strong>Is approved:</strong>
+  <%= @program.is_approved %>
+</p>
+
+<p>
+  <strong>Meeting flag:</strong>
+  <%= @program.meeting_flag %>
+</p>
+
+<p>
+  <strong>Meeting time:</strong>
+  <%= @program.meeting_time %>
+</p>
+
+<p>
+  <strong>Wait list:</strong>
+  <%= @program.wait_list %>
+</p>
+
+<p>
+  <strong>Safe haven:</strong>
+  <%= @program.safe_haven %>
+</p>
+
+<p>
+  <strong>Start age:</strong>
+  <%= @program.start_age %>
+</p>
+
+<p>
+  <strong>End age:</strong>
+  <%= @program.end_age %>
+</p>
+
+<p>
+  <strong>Eligibility:</strong>
+  <%= @program.eligibility %>
+</p>
+
+<p>
+  <strong>Restrictions:</strong>
+  <%= @program.restrictions %>
+</p>
+
+<%= link_to 'Edit', edit_program_path(@program) %> |
+<%= link_to 'Back', programs_path %>
