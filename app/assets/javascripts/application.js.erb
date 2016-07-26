@@ -1,0 +1,17 @@
+//= require jquery
+//= require bootstrap-sprockets
+//= require jquery_ujs
+//= require turbolinks
+//= require leaflet
+//= require_tree .
+
+
+$(document).ready(function(){
+  var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+
+  L.tileLayer('https://api.mapbox.com/v4/eddybanks.0m14ee4a/page.html?access_token=pk.eyJ1IjoiZWRkeWJhbmtzIiwiYSI6ImNpcW1xNTM5YTAwczNnaGpmem9nZmM4bWoifQ.uqlMLvUnRmVf1vRmSFIq0w#3/0.00/0.00', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    id: 'eddybanks.0m14ee4a',
+    maxZoom: 18
+  }).addTo(mymap);
+})
