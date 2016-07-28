@@ -17,6 +17,7 @@
 /** colors **/
 $main-color: rgba(255,255,224,0.8);
 $bg-color: rgba(0,0,0,0.4);
+$bg-table: grayscale($bg-color);
 
 @mixin colors($font-color, $bkg-color: $bg-color){
   color: $font-color;

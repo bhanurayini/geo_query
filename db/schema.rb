@@ -87,7 +87,7 @@ ActiveRecord::Schema.define(version: 20160714173854) do
     t.string   "is_deleted"
     t.jsonb    "contact_name"
     t.jsonb    "contact_email"
-    t.jsonb    "phone"
+    t.jsonb    "phone['main']"
     t.boolean  "is_approved"
     t.boolean  "meeting_flag"
     t.text     "meeting_time"

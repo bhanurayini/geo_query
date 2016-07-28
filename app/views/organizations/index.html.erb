@@ -2,8 +2,9 @@
 
 <h1>Listing Organizations</h1>
 
-<table>
-  <thead>
+<div class="container">
+<table class="table table-bordered table-condensed">
+  <thead class= "head">
     <tr>
       <th>Ein</th>
       <th>Name</th>
@@ -16,11 +17,8 @@
       <th>Website</th>
       <th>Email</th>
       <th>Email visible flag</th>
-      <th>Phone</th>
-      <th>Is approved</th>
-      <th>Is deleted</th>
-      <th>Is active</th>
-      <th>Is draft</th>
+      
+  
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -39,11 +37,8 @@
         <td><%= organization.website %></td>
         <td><%= organization.email %></td>
         <td><%= organization.email_visible_flag %></td>
-        <td><%= organization.phone %></td>
-        <td><%= organization.is_approved %></td>
-        <td><%= organization.is_deleted %></td>
-        <td><%= organization.is_active %></td>
-        <td><%= organization.is_draft %></td>
+        
+        
         <td><%= link_to 'Show', organization %></td>
         <td><%= link_to 'Edit', edit_organization_path(organization) %></td>
         <td><%= link_to 'Destroy', organization, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -55,3 +50,8 @@
 <br>
 
 <%= link_to 'New Organization', new_organization_path %>
+
+ <div class="page_info">
+      <%= page_entries_info @locations %>
+    </div>
+<%= will_paginate @locations, :renderer => BootstrapPagination::Rails  %>

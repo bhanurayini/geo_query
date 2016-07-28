@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   resources :programs
   resources :locations
   resources :organizations
-  root                                      'home#index'
-  get 'contacts'                       =>    'home#contact'
+  root                                      'locations#index'
+  
 end
